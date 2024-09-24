@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceSimulator(LR1)", "RaceSimulator(LR1)\RaceSimulator(LR1).csproj", "{DBB7C929-B063-47B6-96BE-52AA16830FFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BananaJuice", "BananaJuice\BananaJuice.csproj", "{374A0CAD-410F-4A62-8812-439433854184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBB7C929-B063-47B6-96BE-52AA16830FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB7C929-B063-47B6-96BE-52AA16830FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB7C929-B063-47B6-96BE-52AA16830FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB7C929-B063-47B6-96BE-52AA16830FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374A0CAD-410F-4A62-8812-439433854184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374A0CAD-410F-4A62-8812-439433854184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374A0CAD-410F-4A62-8812-439433854184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374A0CAD-410F-4A62-8812-439433854184}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F6A4F30-8407-4A4B-A808-1500EF2A4C24}
+	EndGlobalSection
+EndGlobal
