@@ -12,12 +12,12 @@ namespace RaceSimulator_LR1_
 
             Console.WriteLine("Выберите вид заезда: воздушный/наземный");
 
+            string raceType = Console.ReadLine();
 
-
-            Centaur Yakov1 = new(distance: distance, name: "Кентаврик");
-            SuperBoots Yakov2 = new(distance: distance, name: "Ботиночки");
-            Domic Yakov3 = new(distance: distance, name: "Избушка");
-            PumpkinСarriage Yakov4 = new(distance: distance, name: "Тыковка");
+            Centaur Yakov1 = new(distance: distance, name: "Кентаврик", raceType: raceType);
+            SuperBoots Yakov2 = new(distance: distance, name: "Ботиночки", raceType: raceType);
+            Domic Yakov3 = new(distance: distance, name: "Избушка", raceType: raceType);
+            PumpkinСarriage Yakov4 = new(distance: distance, name: "Тыковка", raceType: raceType);
 
             Console.WriteLine(Yakov1.PrintRacingTime() + " " + Yakov1.Name);
             Console.WriteLine(Yakov2.PrintRacingTime() + " " + Yakov2.Name);

@@ -8,7 +8,7 @@ namespace Vehicles
 {
     public class PumpkinСarriage : GroundVehicle
     {
-        public PumpkinСarriage(double distance, string name) : base(distance, name)
+        public PumpkinСarriage(double distance, string name, string raceType) : base(distance, name, raceType)
         {
             this.Speed = 8.7 * this._randomNumber;
             this.TimeLimit = 650 * this._randomNumber;

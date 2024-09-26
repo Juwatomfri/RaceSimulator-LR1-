@@ -12,7 +12,7 @@ namespace Vehicles
 
         protected override double TimeLimit { get; set; } = 500;
 
-        public Domic(double distance, string name) : base(distance, name)
+        public Domic(double distance, string name, string raceType) : base(distance, name, raceType)
         {
             
             Speed *= _randomNumber; //скорость разных участников одного вида может слегка варьироваться вокруг числа 9

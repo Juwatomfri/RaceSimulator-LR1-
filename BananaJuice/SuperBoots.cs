@@ -9,7 +9,7 @@ namespace Vehicles
 {
     public class SuperBoots : GroundVehicle
     {
-        public SuperBoots(double distance, string name) : base(distance, name)
+        public SuperBoots(double distance, string name, string raceType) : base(distance, name, raceType)
         {
             this.Speed = 9.5 * this._randomNumber;
             this.TimeLimit = 650 * this._randomNumber;

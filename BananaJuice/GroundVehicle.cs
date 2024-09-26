@@ -26,7 +26,15 @@ namespace Vehicles
         /// </summary>
         protected double _neededBreaks;
 
-        public GroundVehicle(double distance, string name) : base(distance, name) {  }
+        public GroundVehicle(double distance, string name, string raceType) : base(distance, name, raceType) 
+        {
+
+            if (raceType.ToLower() != "наземный")
+            {
+                Console.WriteLine("Наземный транспорт не допускается к воздушным гонкам, учатник не был добавлен");
+                return;
+            }
+        }
 
         /// <summary>
         /// отдых длится 30 секунд на первой остановке и далее + 30 секунд на каждую остановку
