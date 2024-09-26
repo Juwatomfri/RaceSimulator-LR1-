@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace RaceSimulator_LR1_
 {
-    public class Vehicle
+    public class Example
     {
         public string Name { get; private set; }
 
         public double Speed { get; private set; }
 
-        public Vehicle(double speed, string name)
+        public double TimeLimit { get; private set; }
+        public double BreakTime { get; private set; }
+
+
+        public Example(double speed, string name)
         {
             Speed = speed;
             Name = name;

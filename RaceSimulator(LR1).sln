@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceSimulator(LR1)", "RaceSimulator(LR1)\RaceSimulator(LR1).csproj", "{DBB7C929-B063-47B6-96BE-52AA16830FFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BananaJuice", "BananaJuice\BananaJuice.csproj", "{374A0CAD-410F-4A62-8812-439433854184}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles", "BananaJuice\Vehicles.csproj", "{374A0CAD-410F-4A62-8812-439433854184}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
