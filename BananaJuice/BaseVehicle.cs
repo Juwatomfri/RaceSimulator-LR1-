@@ -36,7 +36,7 @@ namespace Vehicles
         /// </summary>
         /// <param name="distance"></param>
         /// <param name="speed"></param>
-        public BaseVehicle(double distance, string name) 
+        public BaseVehicle(double distance, string name, string raceType) 
         {
             Name = name;
 
