@@ -98,18 +98,18 @@ namespace RaceSimulator_LR1_.Functions
                         switch (index)
                         {
                             case 1:
-                                Console.WriteLine("-- РЕГИСТРАЦИЯ ЗАВЕРШЕНА --");
+                                Console.WriteLine("-- РЕГИСТРАЦИЯ ЗАВЕРШЕНА -- \n");
                                 if (results.Count != 0)
                                 {
                                     ReturnWinner(results);
                                     PrintResults(results);
                                 } else
                                 {
-                                    Console.WriteLine("-- ВЫ НЕ ЗАРЕГИСТРИРОВАЛИ НИ ОДНОГО УЧАСТНИКА --");
+                                    Console.WriteLine("-- ВЫ НЕ ЗАРЕГИСТРИРОВАЛИ НИ ОДНОГО УЧАСТНИКА -- \n");
                                 }
                                 return;
                             default:
-                                Console.WriteLine("-- РЕГИСТРАЦИЯ НАЧАЛАСЬ --");
+                                Console.WriteLine("-- РЕГИСТРАЦИЯ НАЧАЛАСЬ -- \n");
                                 row += 2;
                                 RegisterGroundTransport(row, distance, results, raceType);
 
