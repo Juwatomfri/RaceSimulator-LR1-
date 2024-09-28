@@ -77,7 +77,7 @@ namespace RaceSimulator_LR1_.Functions
         public static void StartRegisterTransport(int row, string raceType, double distance, Dictionary<double, string> results)
         {
             int index = 0;
-            Console.WriteLine("Давайте зарегистрируем участника?");
+            Console.WriteLine("Давайте зарегистрируем нового участника?");
             row += 2;
             string[] menuItems = new string[] { "Да", "Завершить регистрацию" };
             while (true)
