@@ -26,15 +26,8 @@ namespace Vehicles
         /// </summary>
         protected double _neededBreaks;
 
-        public GroundVehicle(double distance, string name, string raceType) : base(distance, name, raceType) 
-        {
-
-            if (raceType.ToLower() != "наземный")
-            {
-                Console.WriteLine("Наземный транспорт не допускается к воздушным гонкам, учатник не был добавлен");
-                return;
-            }
-        }
+        public GroundVehicle(double distance, string name) : base(distance, name)
+        {         }
 
         /// <summary>
         /// отдых длится 30 секунд на первой остановке и далее + 30 секунд на каждую остановку
@@ -51,6 +44,7 @@ namespace Vehicles
         /// <param name="distance"></param>
         protected void GetAccurateRacingTime(double distance)
         {
+            distance = distance * 1000;
             _neededBreaks = Math.Ceiling(GetRacingTime(distance) / TimeLimit);
             for (int i = 0; i < _neededBreaks; i++)
             {

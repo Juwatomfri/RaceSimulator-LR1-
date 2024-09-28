@@ -1,4 +1,9 @@
-﻿using Vehicles;
+﻿using System;
+using System.Reflection;
+using System.Security.AccessControl;
+using System.Xml.Linq;
+using Vehicles;
+using static RaceSimulator_LR1_.Functions.Functions;
 
 namespace RaceSimulator_LR1_
 {
@@ -6,24 +11,47 @@ namespace RaceSimulator_LR1_
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите дистанцию заезда в километрах: ");
+            string[] menuItems = new string[] { "Запустить гонку", "Выход" };
 
-            double distance = Convert.ToDouble(Console.ReadLine()) * 1000;
+            Console.WriteLine("Давайте запустим гонку? \n");
 
-            Console.WriteLine("Выберите вид заезда: воздушный/наземный");
-
-            string raceType = Console.ReadLine();
-
-            Centaur Yakov1 = new(distance: distance, name: "Кентаврик", raceType: raceType);
-            SuperBoots Yakov2 = new(distance: distance, name: "Ботиночки", raceType: raceType);
-            Domic Yakov3 = new(distance: distance, name: "Избушка", raceType: raceType);
-            PumpkinСarriage Yakov4 = new(distance: distance, name: "Тыковка", raceType: raceType);
-
-            Console.WriteLine(Yakov1.PrintRacingTime() + " " + Yakov1.Name);
-            Console.WriteLine(Yakov2.PrintRacingTime() + " " + Yakov2.Name);
-            Console.WriteLine(Yakov3.PrintRacingTime() + " " + Yakov3.Name);
-            Console.WriteLine(Yakov4.PrintRacingTime() + " " + Yakov4.Name);
-            
+            int row = Console.CursorTop;
+            int col = Console.CursorLeft;
+            int index = 0;
+            while (true)
+            {
+                DrawMenu(menuItems, row, index);
+                switch (Console.ReadKey(true).Key)
+                {
+                    case ConsoleKey.DownArrow:
+                        if (index < menuItems.Length - 1)
+                            index++;
+                        break;
+                    case ConsoleKey.UpArrow:
+                        if (index > 0)
+                            index--;
+                        break;
+                    case ConsoleKey.Enter:
+                        row += menuItems.Length + 2;
+                        switch (index)
+                        {
+                            case 1:
+                                Console.WriteLine("Выбран выход из приложения");
+                                row += 2;
+                                return;
+                            default:
+                                Console.WriteLine($"ВЫБРАН ПУНКТ \"{menuItems[index].ToUpper()}\"\n");
+                                row += 2;
+                                Console.WriteLine("Введите дистанцию гонки в километрах");
+                                double distance = Convert.ToDouble(Console.ReadLine());
+                                row += 2;
+                                Console.WriteLine();
+                                UserRaceChoice(row, distance);
+                                return;
+                        }
+                }
+            }
         }
+        
     }
 }

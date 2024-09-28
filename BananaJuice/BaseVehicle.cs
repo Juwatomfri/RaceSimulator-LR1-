@@ -36,7 +36,7 @@ namespace Vehicles
         /// </summary>
         /// <param name="distance"></param>
         /// <param name="speed"></param>
-        public BaseVehicle(double distance, string name, string raceType) 
+        public BaseVehicle(double distance, string name) 
         {
             Name = name;
 
@@ -56,7 +56,7 @@ namespace Vehicles
             return distance / Speed;
         }
 
-        public double PrintRacingTime()
+        public double ReturnRacingTime()
         {
             return Math.Round(_racingTime / 60 / 60, 2);
         }
