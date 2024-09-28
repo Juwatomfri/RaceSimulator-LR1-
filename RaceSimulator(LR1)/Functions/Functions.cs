@@ -57,7 +57,7 @@ namespace RaceSimulator_LR1_.Functions
                         break;
                     case ConsoleKey.Enter:
                         row += menuItems.Length + 2;
-                        Console.WriteLine($"ВЫБРАНА {menuItems[index].ToUpper()} ГОНКА \n");
+                        Console.WriteLine($"-- ВЫБРАНА {menuItems[index].ToUpper()} ГОНКА --\n");
                         //row += 2;
                         string raceType = menuItems[index].ToLower();
                         var results = new Dictionary<double, string>();
@@ -98,18 +98,18 @@ namespace RaceSimulator_LR1_.Functions
                         switch (index)
                         {
                             case 1:
-                                Console.WriteLine("РЕГИСТРАЦИЯ ЗАВЕРШЕНА");
+                                Console.WriteLine("-- РЕГИСТРАЦИЯ ЗАВЕРШЕНА --");
                                 if (results.Count != 0)
                                 {
                                     ReturnWinner(results);
                                     PrintResults(results);
                                 } else
                                 {
-                                    Console.WriteLine("Вы не зарегистрировали ни одного участника");
+                                    Console.WriteLine("-- ВЫ НЕ ЗАРЕГИСТРИРОВАЛИ НИ ОДНОГО УЧАСТНИКА --");
                                 }
                                 return;
                             default:
-                                Console.WriteLine("РЕГИСТРАЦИЯ НАЧАЛАСЬ \n");
+                                Console.WriteLine("-- РЕГИСТРАЦИЯ НАЧАЛАСЬ --");
                                 row += 2;
                                 RegisterGroundTransport(row, distance, results, raceType);
 
@@ -159,7 +159,7 @@ namespace RaceSimulator_LR1_.Functions
                         row += menuItems.Length + 2;
                         if (index == menuItems.Length - 1)
                         {
-                            Console.WriteLine("ВЫ ВЫШЛИ ИЗ ПРОГРАММЫ");
+                            Console.WriteLine("--ИВЫ ВЫШЛИ ИЗ ПРОГРАММЫ --");
                             row += 2;
                             return [];
                         }
@@ -187,6 +187,8 @@ namespace RaceSimulator_LR1_.Functions
                                     return [];
                                 }
                                 results[abuyz] = name;
+                                Console.WriteLine( "-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --");
+                                row += 2;
                                 StartRegisterTransport(row, "наземная", distance, results);
                                 return results;
                             }
@@ -202,11 +204,13 @@ namespace RaceSimulator_LR1_.Functions
                                 };
                                 if (abuyz == -1)
                                 {
-                                    Console.WriteLine("Выбран выход из приложения");
+                                    Console.WriteLine("-- ВЫБРАН ВЫХОД ИЗ ПРИЛОЖЕНИЯ --");
                                     row += 2;
                                     return [];
                                 }
                                 results[abuyz] = name;
+                                Console.WriteLine("-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --");
+                                row += 2;
                                 StartRegisterTransport(row, "воздушная", distance, results);
                                 return results;
                             }
@@ -231,6 +235,8 @@ namespace RaceSimulator_LR1_.Functions
                                     return [];
                                 }
                                 results[abuyz] = name;
+                                Console.WriteLine("-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --");
+                                row += 2;
                                 StartRegisterTransport(row, "смешанная", distance, results);
                                 return results;
                             }

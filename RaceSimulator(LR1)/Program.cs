@@ -36,11 +36,11 @@ namespace RaceSimulator_LR1_
                         switch (index)
                         {
                             case 1:
-                                Console.WriteLine("Выбран выход из приложения");
+                                Console.WriteLine("-- ВЫБРАН ВЫХОД ИЗ ПРИЛОЖЕНИЯ --");
                                 row += 2;
                                 return;
                             default:
-                                Console.WriteLine($"ВЫБРАН ПУНКТ \"{menuItems[index].ToUpper()}\"\n");
+                                Console.WriteLine($"-- ВЫБРАН ПУНКТ \"{menuItems[index].ToUpper()}\"-- \n");
                                 row += 2;
                                 double distance = 0;
                                 Console.WriteLine("Введите дистанцию гонки в километрах");
@@ -53,7 +53,6 @@ namespace RaceSimulator_LR1_
                                         distance = Convert.ToDouble(read);
                                     } else
                                     {
-                                        Console.WriteLine();
                                         Console.WriteLine("Дистанция должна задаваться числом, попробуйте ещё раз");
                                     }
                                     row += 2;
