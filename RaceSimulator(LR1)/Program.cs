@@ -42,9 +42,22 @@ namespace RaceSimulator_LR1_
                             default:
                                 Console.WriteLine($"ВЫБРАН ПУНКТ \"{menuItems[index].ToUpper()}\"\n");
                                 row += 2;
+                                double distance = 0;
                                 Console.WriteLine("Введите дистанцию гонки в километрах");
-                                double distance = Convert.ToDouble(Console.ReadLine());
-                                row += 2;
+                                while (distance == 0)
+                                {
+                                    var read = Console.ReadLine();
+                                    double worked;
+                                    if (double.TryParse(read, out worked))
+                                    {
+                                        distance = Convert.ToDouble(read);
+                                    } else
+                                    {
+                                        Console.WriteLine();
+                                        Console.WriteLine("Дистанция должна задаваться числом, попробуйте ещё раз");
+                                    }
+                                    row += 2;
+                                }
                                 Console.WriteLine();
                                 UserRaceChoice(row, distance);
                                 return;

@@ -29,8 +29,6 @@ namespace RaceSimulator_LR1_.Functions
                 Console.ResetColor();
             }
             Console.WriteLine();
-            //row += items.Length + 5;
-            //return row;
         }
 
         /// <summary>
