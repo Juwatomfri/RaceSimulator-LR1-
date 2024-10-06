@@ -169,10 +169,10 @@ namespace RaceSimulator_LR1_.Functions
                             string name = Console.ReadLine();
                             row += 2;
                             Console.WriteLine();
-                            double abuyz;
+                            double newIndex;
                             if (raceType == "наземная")
                             {
-                                abuyz = index switch
+                                newIndex = index switch
                                 {
                                     0 => new SuperBoots(distance: distance, name: name, raceType).ReturnRacingTime(),
                                     1 => new PumpkinСarriage(distance: distance, name: name, raceType).ReturnRacingTime(),
@@ -180,13 +180,13 @@ namespace RaceSimulator_LR1_.Functions
                                     3 => new Centaur(distance: distance, name: name, raceType).ReturnRacingTime(),
                                     _ => -1
                                 };
-                                if (abuyz == -1)
+                                if (newIndex == -1)
                                 {
                                     Console.WriteLine("ВЫБРАН ВЫХОД ИЗ ПРИЛОЖЕНИЯ");
                                     row += 2;
                                     return [];
                                 }
-                                results[abuyz] = name;
+                                results[newIndex] = name;
                                 Console.WriteLine( "-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --");
                                 row += 2;
                                 StartRegisterTransport(row, "наземная", distance, results);
@@ -194,7 +194,7 @@ namespace RaceSimulator_LR1_.Functions
                             }
                             if (raceType == "воздушная")
                             {
-                                abuyz = index switch
+                                newIndex = index switch
                                 {
                                     0 => new BabaYagaMortar(distance: distance, name: name, raceType).ReturnRacingTime(),
                                     1 => new Broom(distance: distance, name: name, raceType).ReturnRacingTime(),
@@ -202,13 +202,13 @@ namespace RaceSimulator_LR1_.Functions
                                     3 => new FlyingShip(distance: distance, name: name, raceType).ReturnRacingTime(),
                                     _ => -1
                                 };
-                                if (abuyz == -1)
+                                if (newIndex == -1)
                                 {
                                     Console.WriteLine("-- ВЫБРАН ВЫХОД ИЗ ПРИЛОЖЕНИЯ --");
                                     row += 2;
                                     return [];
                                 }
-                                results[abuyz] = name;
+                                results[newIndex] = name;
                                 Console.WriteLine("-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --");
                                 row += 2;
                                 StartRegisterTransport(row, "воздушная", distance, results);
@@ -216,7 +216,7 @@ namespace RaceSimulator_LR1_.Functions
                             }
                             if (raceType == "смешанная")
                             {
-                                abuyz = index switch
+                                newIndex = index switch
                                 {
                                     0 => new SuperBoots(distance: distance, name: name, raceType).ReturnRacingTime(),
                                     1 => new PumpkinСarriage(distance: distance, name: name, raceType).ReturnRacingTime(),
@@ -228,13 +228,13 @@ namespace RaceSimulator_LR1_.Functions
                                     7 => new FlyingShip(distance: distance, name: name, raceType).ReturnRacingTime(),
                                     _ => -1
                                 };
-                                if (abuyz == -1)
+                                if (newIndex == -1)
                                 {
                                     Console.WriteLine("Выбран выход из приложения");
                                     row += 2;
                                     return [];
                                 }
-                                results[abuyz] = name;
+                                results[newIndex] = name;
                                 Console.WriteLine("-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --");
                                 row += 2;
                                 StartRegisterTransport(row, "смешанная", distance, results);
