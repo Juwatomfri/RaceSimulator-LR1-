@@ -22,8 +22,7 @@ namespace RaceSimulator_LR1_.Functions
             {
                 if (i == index)
                 {
-                    Console.BackgroundColor = Console.ForegroundColor;
-                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.ForegroundColor = ConsoleColor.Green;
                 }
                 Console.WriteLine(items[i]);
                 Console.ResetColor();
