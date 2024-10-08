@@ -19,12 +19,12 @@ namespace Vehicles
         /// <summary>
         /// время отдыха в секундах
         /// </summary>
-        protected double _breakTime;
+        protected double _breakTime { get; set; }
 
         /// <summary>
         /// количество требуемых остановок в зависимости от дистанции
         /// </summary>
-        protected double _neededBreaks;
+        protected double _neededBreaks { get; set; }
 
         public GroundVehicle(double distance, string name, string raceType) : base(distance, name, raceType)
         {

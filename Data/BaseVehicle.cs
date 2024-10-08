@@ -19,17 +19,17 @@ namespace Vehicles
         /// <summary>
         /// время прохождения дистанции в секундах
         /// </summary>
-        protected double _racingTime;
+        protected double _racingTime { get; set; }
 
         /// <summary>
         /// имя участника
         /// </summary>
-        public string Name;
+        public string Name { get; set; }
 
         /// <summary>
         /// уникальный случайный коэффициент участника
         /// </summary>
-        protected double _randomNumber;
+        protected double _randomNumber { get; set; }
 
         /// <summary>
         /// дистанция указывается в метрах
