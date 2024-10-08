@@ -158,7 +158,7 @@ namespace RaceSimulator_LR1_.Functions
                         row += menuItems.Length + 2;
                         if (index == menuItems.Length - 1)
                         {
-                            Console.WriteLine("--ИВЫ ВЫШЛИ ИЗ ПРОГРАММЫ --");
+                            Console.WriteLine("--ВЫ ВЫШЛИ ИЗ ПРОГРАММЫ --");
                             row += 2;
                             return [];
                         }
@@ -186,7 +186,7 @@ namespace RaceSimulator_LR1_.Functions
                                     return [];
                                 }
                                 results[newIndex] = name;
-                                Console.WriteLine( "-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --");
+                                Console.WriteLine("-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --\n");
                                 row += 2;
                                 StartRegisterTransport(row, "наземная", distance, results);
                                 return results;
@@ -203,12 +203,12 @@ namespace RaceSimulator_LR1_.Functions
                                 };
                                 if (newIndex == -1)
                                 {
-                                    Console.WriteLine("-- ВЫБРАН ВЫХОД ИЗ ПРИЛОЖЕНИЯ --");
+                                    Console.WriteLine("-- ВЫБРАН ВЫХОД ИЗ ПРИЛОЖЕНИЯ --\n");
                                     row += 2;
                                     return [];
                                 }
                                 results[newIndex] = name;
-                                Console.WriteLine("-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --");
+                                Console.WriteLine("-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --\n");
                                 row += 2;
                                 StartRegisterTransport(row, "воздушная", distance, results);
                                 return results;
@@ -229,12 +229,12 @@ namespace RaceSimulator_LR1_.Functions
                                 };
                                 if (newIndex == -1)
                                 {
-                                    Console.WriteLine("Выбран выход из приложения");
+                                    Console.WriteLine("Выбран выход из приложения\n");
                                     row += 2;
                                     return [];
                                 }
                                 results[newIndex] = name;
-                                Console.WriteLine("-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --");
+                                Console.WriteLine("-- УЧАСТНИК УСПЕШНО ЗАРЕГИСТРИРОВАН --\n");
                                 row += 2;
                                 StartRegisterTransport(row, "смешанная", distance, results);
                                 return results;
