@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaceSimulator(LR1)", "RaceSimulator(LR1)\RaceSimulator(LR1).csproj", "{DBB7C929-B063-47B6-96BE-52AA16830FFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "BananaJuice\Data.csproj", "{374A0CAD-410F-4A62-8812-439433854184}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewData", "NewData\NewData.csproj", "{DBD4EF5E-37BE-479C-A1B8-2ED1F27CF553}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{DBB7C929-B063-47B6-96BE-52AA16830FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBB7C929-B063-47B6-96BE-52AA16830FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBB7C929-B063-47B6-96BE-52AA16830FFF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{374A0CAD-410F-4A62-8812-439433854184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{374A0CAD-410F-4A62-8812-439433854184}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{374A0CAD-410F-4A62-8812-439433854184}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{374A0CAD-410F-4A62-8812-439433854184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD4EF5E-37BE-479C-A1B8-2ED1F27CF553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD4EF5E-37BE-479C-A1B8-2ED1F27CF553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD4EF5E-37BE-479C-A1B8-2ED1F27CF553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD4EF5E-37BE-479C-A1B8-2ED1F27CF553}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
