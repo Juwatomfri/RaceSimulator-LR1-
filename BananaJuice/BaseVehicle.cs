@@ -9,7 +9,7 @@ namespace Vehicles
     /// <summary>
     /// базовый класс для всех видов транспорта
     /// </summary>
-    public class BaseVehicle
+    public abstract class BaseVehicle
     {
         /// <summary>
         /// скорость в м/с

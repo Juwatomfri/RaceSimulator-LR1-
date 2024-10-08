@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vehicles
 {
-    public class AirVehicle : BaseVehicle
+    public abstract class AirVehicle : BaseVehicle
     {
         /// <summary>
         /// ускорение транспорта

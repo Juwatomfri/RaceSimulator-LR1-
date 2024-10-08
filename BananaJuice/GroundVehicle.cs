@@ -9,7 +9,7 @@ namespace Vehicles
     /// <summary>
     /// базовый класс для наземного транспорта
     /// </summary>
-    public class GroundVehicle : BaseVehicle
+    public abstract class GroundVehicle : BaseVehicle
     {
         /// <summary>
         /// время движения до отдыха в секундах

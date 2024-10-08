@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Vehicles;
 
-namespace Vehicles
+namespace Data.GroundVehicles
 {
-    public class Centaur : GroundVehicle
+    public class Domic : GroundVehicle
     {
-        public Centaur(double distance, string name, string raceType) : base(distance, name, raceType)
+        public Domic(double distance, string name, string raceType) : base(distance, name, raceType)
         {
-            Speed = 15 * _randomNumber;
+            Speed = 16 * _randomNumber;
             TimeLimit = 600 * _randomNumber;
             GetAccurateRacingTime(distance);
         }

@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Vehicles;
 
-namespace Vehicles
+namespace Data.GroundVehicles
 {
     public class SuperBoots : GroundVehicle
     {
